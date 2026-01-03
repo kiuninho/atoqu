@@ -1,7 +1,7 @@
 
 Contributors — Atoqu
 
-- Core Architect & Original Author: You (C/C++ engine builder)
+- Core Architect & Original Author: JavadInteger (The founder of OverLab Group)
 - Future contributors: add your name and role here.
 
 Notes:
