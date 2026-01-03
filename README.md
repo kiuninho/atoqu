@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-# atoqu
-Atoqu - The first Atomic &amp; Quantum search engine ever exists
-=======
-
-Atoqu Search Engine — v1.2 (GPU-Optimized, Multi-Mode, Hardened)
+# Atoqu Search Engine — v1.2 (GPU-Optimized, Multi-Mode, Hardened)
 
 Atoqu is an Atomic + Quantum-inspired search engine core in C++, designed as a reference-grade, low-level engine.
 
@@ -43,25 +38,25 @@ Highlights (v1.2)
 
 Quick start (CPU-only)
 
-`bash
+```bash
 mkdir -p build
 cd build
 cmake ..
 cmake --build .
 ./atoqu --http 8080
-`
+```
 
 GPU backend selection
 
 Configure config/gpu.json:
 
-`json
+```json
 {
   "backend": "cuda",
   "dimension": 384,
   "maxdocsper_batch": 8192
 }
-`
+```
 
 Supported values for backend:
 
@@ -79,7 +74,7 @@ Modes configuration
 
 config/modes.json controls which modes are enabled and their weights.
 
-`json
+```json
 [
   { "name": "NormalMode",   "enabled": true,  "weight": 1.0 },
   { "name": "HybridMode",   "enabled": true,  "weight": 1.0 },
@@ -89,16 +84,16 @@ config/modes.json controls which modes are enabled and their weights.
   { "name": "RecencyMode",  "enabled": false, "weight": 0.5 },
   { "name": "TagBoostMode", "enabled": false, "weight": 0.5 }
 ]
-`
+```
 
 Documentation
 
-`bash
+```bash
 mkdir -p build
 cd build
 cmake -DATOQUBUILDDOCS=ON ..
 cmake --build . --target docs
-`
+```
 
 Generated docs:
 
@@ -106,4 +101,3 @@ Generated docs:
 - Sphinx HTML: docs/sphinx/_build/html/
 
 See ARCHITECTURE.md and CHANGELOG.md for the full evolution up to v1.2.
->>>>>>> master
