@@ -101,3 +101,4 @@ Generated docs:
 - Sphinx HTML: docs/sphinx/_build/html/
 
 See ARCHITECTURE.md and CHANGELOG.md for the full evolution up to v1.2.
+You can also see [Dev.to Blog](https://dev.to/javadinteger/atoqu-the-first-atomic-qunatum-search-engine-ever-exists-in-your-system-57fg?utm_source=github.com) for more.
